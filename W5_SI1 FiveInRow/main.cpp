@@ -1,7 +1,5 @@
 #include "GameHandler.h"
 
-
-
 int main() {
 	GameHandler game;
 	game.runGame();

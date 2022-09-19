@@ -4,7 +4,7 @@
 class Board
 {
 public:
-	void createBoard(std::pair<int,int>board);
+	void createBoard(std::pair<int, int>board);
 	void printBoard();
 	Board() = default;
 	std::pair<int, int> getBoardSize();
@@ -12,7 +12,6 @@ public:
 	std::vector<std::vector<char>>* getBoard();
 private:
 	std::vector<std::vector<char>>gameBoard;
-	std::vector<std::vector<char>>*gameBoardPtr = &gameBoard;
+	std::vector<std::vector<char>>* gameBoardPtr = &gameBoard;
 
 };
-

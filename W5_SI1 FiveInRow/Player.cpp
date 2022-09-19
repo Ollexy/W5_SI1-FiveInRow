@@ -9,7 +9,7 @@ std::pair<int, int>  Player::inputCoordinate()
 	std::cin >> column >> row;
 	column = std::toupper(column);
 	move.first = static_cast<int>(column - 'A');
-	move.second = row;
+	move.second = row - 1;
 
 	return move;
 }
@@ -26,5 +26,4 @@ void Player::setPlayerSign()
 	std::cin >> sign;
 	sign = std::toupper(sign);
 }
-
 

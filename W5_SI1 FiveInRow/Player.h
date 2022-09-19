@@ -10,8 +10,7 @@ public:
 	char sign;
 
 	Player() = default;
-	std::pair<int,int> inputCoordinate();
+	std::pair<int, int> inputCoordinate();
 	void setPlayerName();
 	void setPlayerSign();
 };
-

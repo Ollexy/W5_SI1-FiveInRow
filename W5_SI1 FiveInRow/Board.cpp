@@ -2,7 +2,7 @@
 #include <iostream>
 
 void Board::createBoard(std::pair<int, int>board)
-{	
+{
 	for (int j = 0; j < board.first; j++) {
 		std::vector<char> row;
 		for (int i = 0; i < board.second; i++)
@@ -18,12 +18,12 @@ void Board::printBoard()
 		std::cout << (char)('A' + i) << " ";
 	}
 	std::cout << std::endl;
-	for (int i = 1; i < gameBoard.size(); i++)
+	for (int i = 0; i < gameBoard.size(); i++)
 	{
-		if (i < 10)
-			std::cout << i << "  ";
+		if (i + 1 < 10)
+			std::cout << i + 1 << "  ";
 		else
-			std::cout << i << " ";
+			std::cout << i + 1 << " ";
 
 		for (int j = 0; j < gameBoard[i].size(); j++) {
 			std::cout << gameBoard[j][i] << " ";
@@ -49,4 +49,3 @@ std::vector<std::vector<char>>* Board::getBoard()
 {
 	return gameBoardPtr;
 }
-
